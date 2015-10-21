@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BDA057FF-3A28-4B7E-963B-A0AA705C0DDC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>test2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DCF26C6AD7002B3338A8A28F2C555C9E9EF71BB1</key>
+		<string>https://github.com/christinatsan/EmoComputing_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>test2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DCF26C6AD7002B3338A8A28F2C555C9E9EF71BB1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/christinatsan/EmoComputing_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DCF26C6AD7002B3338A8A28F2C555C9E9EF71BB1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DCF26C6AD7002B3338A8A28F2C555C9E9EF71BB1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EmoComputing_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
