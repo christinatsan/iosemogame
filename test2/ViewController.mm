@@ -142,76 +142,127 @@ NSString *mainEmotion;
         
 }
 
--(void) getResponse {
+//-(void) postImage {
+//    
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    // NSDictionary *parameters = @{@"bookmark[title]" : @"photo.jpg"};
+//    NSData *imageData = UIImageJPEGRepresentation(faceImage, 0.5);
+//    //NSData *imageData = UIImageJPEGRepresentation(self.faceView.image,0.5);
+//    [manager POST:@"http://emo.vistawearables.com/bookmarks" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+//        [formData appendPartWithFileData:imageData name:@"bookmark[photo]" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
+//    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        NSLog(@"Success: %@", responseObject);
+//        // [self getResponse];
+//        
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        [self getResponse];
+//        NSLog(@"Error: %@", error);
+//        
+//    }];
+//    
+//}
+
+- (void) findHighest {
     
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW,0),^{
+    NSArray *emoString = [NSArray arrayWithObjects:@"happy",@"surprise",@"sad",@"fear",@"neutral",@"disgust",@"angry",nil];
+    
+    float happyInt = [happy floatValue];
+    float surpriseInt = [surprise floatValue];
+    float sadInt = [sad floatValue];
+    float fearInt = [fear floatValue];
+    float neutralInt = [neutral floatValue];
+    float disgustInt = [disgust floatValue];
+    float angryInt = [angry floatValue];
+    
+    float emo[7] = {happyInt,surpriseInt,sadInt,fearInt,neutralInt,disgustInt,angryInt};
+    
+    double largest = 0;
+    
+    for(int i=0;i<=6;i++){
+        if(emo[i]>largest)
+            largest = emo[i];
         
-        /* NSURL *url = [NSURL URLWithString:@"http://emo.vistawearables.com/bookmarks.json"];
-         NSURLRequest *request = [NSURLRequest requestWithURL:url];
-         
-         // 2
-         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-         operation.responseSerializer = [AFJSONResponseSerializer serializer];
-         
-         [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-         
-         NSLog(@"json: %@", responseObject);
-         
-         // 3
-         emotions = (NSDictionary *)responseObject;
-         //self.title = @"JSON Retrieved";
-         happy = emotions[@"happy"];
-         NSLog(@"HAPPY: %@",happy);
-         
-         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-         
-         // 4
-         NSLog(@"json error");
-         }];
-         
-         // 5
-         [operation start];*/
-        
-        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-        manager.requestSerializer = [AFJSONRequestSerializer serializer];
-        [manager GET:@"http://emo.vistawearables.com/bookmarks.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            NSLog(@"JSON: %@", responseObject);
-            
-            emotions = (NSDictionary *)responseObject;
-            happy = emotions[@"happy"];
-            surprise = emotions[@"surprise"];
-            sad = emotions[@"sad"];
-            fear = emotions[@"fear"];
-            neutral = emotions[@"neutral"];
-            disgust = emotions[@"disgust"];
-            angry = emotions[@"angry"];
-            
-            NSLog(@"HAPPY: %@",happy);
-            
-            // [self findHighest];
-            
-            
-            
-            //            happy = json[@"happy"];
-            
-            
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"Error: %@", error);
-        }];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"work here");
-//            NSLog(@"after get main %@",happy);
-//            [self findHighest];
-//            self.resultText.text = mainEmotion;
-        });
-        
-        
-        
-    });
+    }
+    
+    for(int i=0;i<=6;i++){
+        if(emo[i] == largest)
+            mainEmotion = emoString[i];
+    }
+    
     
 }
+
+//-(void) getResponse {
+//    
+//    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW,0),^{
+//        
+//        /* NSURL *url = [NSURL URLWithString:@"http://emo.vistawearables.com/bookmarks.json"];
+//         NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//         
+//         // 2
+//         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+//         operation.responseSerializer = [AFJSONResponseSerializer serializer];
+//         
+//         [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+//         
+//         NSLog(@"json: %@", responseObject);
+//         
+//         // 3
+//         emotions = (NSDictionary *)responseObject;
+//         //self.title = @"JSON Retrieved";
+//         happy = emotions[@"happy"];
+//         NSLog(@"HAPPY: %@",happy);
+//         
+//         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//         
+//         // 4
+//         NSLog(@"json error");
+//         }];
+//         
+//         // 5
+//         [operation start];*/
+//        
+//        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//        manager.requestSerializer = [AFJSONRequestSerializer serializer];
+//        [manager GET:@"http://emo.vistawearables.com/bookmarks.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//            NSLog(@"JSON: %@", responseObject);
+//            
+//            emotions = (NSDictionary *)responseObject;
+//            happy = emotions[@"happy"];
+//            surprise = emotions[@"surprise"];
+//            sad = emotions[@"sad"];
+//            fear = emotions[@"fear"];
+//            neutral = emotions[@"neutral"];
+//            disgust = emotions[@"disgust"];
+//            angry = emotions[@"angry"];
+//            
+//            NSLog(@"HAPPY: %@",happy);
+//            
+//            // [self findHighest];
+//            
+//            
+//            
+//            //            happy = json[@"happy"];
+//            
+//            
+//        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//            NSLog(@"Error: %@", error);
+//        }];
+//        
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            NSLog(@"work here");
+////            NSLog(@"after get main %@",happy);
+////            [self findHighest];
+////            self.resultText.text = mainEmotion;
+//        });
+//        
+//        
+//        
+//    });
+//    
+//}
 
 - (IBAction)handleResultClick:(id)sender {
     [self showFace];
@@ -234,7 +285,12 @@ NSString *mainEmotion;
 }
 - (IBAction)handlemvim:(id)sender {
     
+    //NSString *string = [NSString stringWithFormat:@"www.baidu.com"];
+    //NSURL *url = [NSURL URLWithString:string];
+    //NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
+    // 2
+    //AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     //self.imageView.frame=CGRectMake(0,0,100,100);
 //    CGRect oldFrame = self.faceView.frame;
 //    CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y+50, oldFrame.size.width, oldFrame.size.height);
@@ -299,9 +355,9 @@ NSString *mainEmotion;
     return newImage;
 }
 - (IBAction)missilescore:(id)sender {
-//    totalscore+=1;
-//    NSString *strscr=[NSString stringWithFormat:@"Score: %d",totalscore];
-//    [self.scoretext setText:strscr];
+    totalscore+=1;
+    NSString *strscr=[NSString stringWithFormat:@"Score: %d",totalscore];
+    [self.scoretext setText:strscr];
     
 }
 - (void)showFace {

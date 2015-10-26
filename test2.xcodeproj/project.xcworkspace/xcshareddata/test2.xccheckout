@@ -7,32 +7,32 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BDA057FF-3A28-4B7E-963B-A0AA705C0DDC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>test2</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DCF26C6AD7002B3338A8A28F2C555C9E9EF71BB1</key>
-		<string>https://github.com/christinatsan/EmoComputing_ios.git</string>
+		<key>F95476F55FD793ECEBB714B31CDAC4697774A791</key>
+		<string>https://github.com/buaawelldon/iosemogame.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>test2.xcodeproj</string>
+	<string>test2.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DCF26C6AD7002B3338A8A28F2C555C9E9EF71BB1</key>
+		<key>F95476F55FD793ECEBB714B31CDAC4697774A791</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/christinatsan/EmoComputing_ios.git</string>
+	<string>https://github.com/buaawelldon/iosemogame.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DCF26C6AD7002B3338A8A28F2C555C9E9EF71BB1</string>
+	<string>F95476F55FD793ECEBB714B31CDAC4697774A791</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DCF26C6AD7002B3338A8A28F2C555C9E9EF71BB1</string>
+			<string>F95476F55FD793ECEBB714B31CDAC4697774A791</string>
 			<key>IDESourceControlWCCName</key>
 			<string>EmoComputing_ios</string>
 		</dict>
