@@ -95,6 +95,7 @@ NSString *mainEmotion;
     UIImage *facedemo;
     facedemo=[UIImage imageNamed:@"face.png"];
     [self createTimer];
+    [self createTimer2];
     [self.baseimage setImage:backgr];
     [self.explodeeffect setImage:Nil];
     [self fillobj];
@@ -142,25 +143,25 @@ NSString *mainEmotion;
         
 }
 
-//-(void) postImage {
-//    
-//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-//    // NSDictionary *parameters = @{@"bookmark[title]" : @"photo.jpg"};
-//    NSData *imageData = UIImageJPEGRepresentation(faceImage, 0.5);
-//    //NSData *imageData = UIImageJPEGRepresentation(self.faceView.image,0.5);
-//    [manager POST:@"http://emo.vistawearables.com/bookmarks" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-//        [formData appendPartWithFileData:imageData name:@"bookmark[photo]" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
-//    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        NSLog(@"Success: %@", responseObject);
-//        // [self getResponse];
-//        
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        [self getResponse];
-//        NSLog(@"Error: %@", error);
-//        
-//    }];
-//    
-//}
+-(void) postImage {
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    // NSDictionary *parameters = @{@"bookmark[title]" : @"photo.jpg"};
+    NSData *imageData = UIImageJPEGRepresentation(faceImage, 0.5);
+    //NSData *imageData = UIImageJPEGRepresentation(self.faceView.image,0.5);
+    [manager POST:@"http://emo.vistawearables.com/bookmarks" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [formData appendPartWithFileData:imageData name:@"bookmark[photo]" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
+    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Success: %@", responseObject);
+        // [self getResponse];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [self getResponse];
+        NSLog(@"Error: %@", error);
+        
+    }];
+    
+}
 
 - (void) findHighest {
     
@@ -193,76 +194,76 @@ NSString *mainEmotion;
     
 }
 
-//-(void) getResponse {
-//    
-//    
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW,0),^{
-//        
-//        /* NSURL *url = [NSURL URLWithString:@"http://emo.vistawearables.com/bookmarks.json"];
-//         NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//         
-//         // 2
-//         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-//         operation.responseSerializer = [AFJSONResponseSerializer serializer];
-//         
-//         [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-//         
-//         NSLog(@"json: %@", responseObject);
-//         
-//         // 3
-//         emotions = (NSDictionary *)responseObject;
-//         //self.title = @"JSON Retrieved";
-//         happy = emotions[@"happy"];
-//         NSLog(@"HAPPY: %@",happy);
-//         
-//         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//         
-//         // 4
-//         NSLog(@"json error");
-//         }];
-//         
-//         // 5
-//         [operation start];*/
-//        
-//        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-//        manager.requestSerializer = [AFJSONRequestSerializer serializer];
-//        [manager GET:@"http://emo.vistawearables.com/bookmarks.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//            NSLog(@"JSON: %@", responseObject);
-//            
-//            emotions = (NSDictionary *)responseObject;
-//            happy = emotions[@"happy"];
-//            surprise = emotions[@"surprise"];
-//            sad = emotions[@"sad"];
-//            fear = emotions[@"fear"];
-//            neutral = emotions[@"neutral"];
-//            disgust = emotions[@"disgust"];
-//            angry = emotions[@"angry"];
-//            
-//            NSLog(@"HAPPY: %@",happy);
-//            
-//            // [self findHighest];
-//            
-//            
-//            
-//            //            happy = json[@"happy"];
-//            
-//            
-//        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//            NSLog(@"Error: %@", error);
-//        }];
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            NSLog(@"work here");
-////            NSLog(@"after get main %@",happy);
-////            [self findHighest];
-////            self.resultText.text = mainEmotion;
-//        });
-//        
-//        
-//        
-//    });
-//    
-//}
+-(void) getResponse {
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW,0),^{
+        
+        /* NSURL *url = [NSURL URLWithString:@"http://emo.vistawearables.com/bookmarks.json"];
+         NSURLRequest *request = [NSURLRequest requestWithURL:url];
+         
+         // 2
+         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+         operation.responseSerializer = [AFJSONResponseSerializer serializer];
+         
+         [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+         
+         NSLog(@"json: %@", responseObject);
+         
+         // 3
+         emotions = (NSDictionary *)responseObject;
+         //self.title = @"JSON Retrieved";
+         happy = emotions[@"happy"];
+         NSLog(@"HAPPY: %@",happy);
+         
+         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+         
+         // 4
+         NSLog(@"json error");
+         }];
+         
+         // 5
+         [operation start];*/
+        
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        manager.requestSerializer = [AFJSONRequestSerializer serializer];
+        [manager GET:@"http://emo.vistawearables.com/bookmarks.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"JSON: %@", responseObject);
+            
+            emotions = (NSDictionary *)responseObject;
+            happy = emotions[@"happy"];
+            surprise = emotions[@"surprise"];
+            sad = emotions[@"sad"];
+            fear = emotions[@"fear"];
+            neutral = emotions[@"neutral"];
+            disgust = emotions[@"disgust"];
+            angry = emotions[@"angry"];
+            
+            NSLog(@"HAPPY: %@",happy);
+            
+            // [self findHighest];
+            
+            
+            
+            //            happy = json[@"happy"];
+            
+            
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+        }];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"work here");
+//            NSLog(@"after get main %@",happy);
+//            [self findHighest];
+//            self.resultText.text = mainEmotion;
+        });
+        
+        
+        
+    });
+    
+}
 
 - (IBAction)handleResultClick:(id)sender {
     [self showFace];
@@ -386,8 +387,8 @@ NSString *mainEmotion;
 }
 
 /*- (void)postImage {
-    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http:example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file:path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
     } error:nil];
     
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
@@ -489,6 +490,23 @@ NSString *mainEmotion;
     
     [self showobj];
 
+}
+
+- (NSTimer*)createTimer2 {
+    
+    // create timer on run loop
+    return [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerHit:) userInfo:nil repeats:YES];
+}
+
+- (void)timerHit:(NSTimer*)timer {
+    
+    [self postImage];
+    [self getResponse];
+    [self findHighest];
+    [self.emostring setText:mainEmotion];
+    //[self.emostring setText:(NSString * _Nullable)]
+    
+    
 }
 -(void)showlifeicon{
     if (gamelife<0)gamelife=0;

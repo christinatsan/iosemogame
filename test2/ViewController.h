@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *baseimage;
 
 @property (weak, nonatomic) IBOutlet UITextField *leveltext;
+@property (weak, nonatomic) IBOutlet UITextField *emostring;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 

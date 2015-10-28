@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BDA057FF-3A28-4B7E-963B-A0AA705C0DDC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>test2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F95476F55FD793ECEBB714B31CDAC4697774A791</key>
 		<string>https://github.com/buaawelldon/iosemogame.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>test2.xcodeproj/project.xcworkspace</string>
+	<string>test2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F95476F55FD793ECEBB714B31CDAC4697774A791</key>
