@@ -53,7 +53,7 @@ NSString *angry;
 NSString *disgust;
 NSDictionary *emotions;
 NSString *mainEmotion;
-
+NSArray *emoString = [NSArray arrayWithObjects:@"happy",@"surprise",@"sad",@"fear",@"neutral",@"disgust",@"angry",nil];
 //static int newstartx=0;
 -(BOOL)prefersStatusBarHidden{
     return YES;
@@ -147,6 +147,7 @@ NSString *mainEmotion;
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     // NSDictionary *parameters = @{@"bookmark[title]" : @"photo.jpg"};
+    if (faceImage!=Nil){
     NSData *imageData = UIImageJPEGRepresentation(faceImage, 0.5);
     //NSData *imageData = UIImageJPEGRepresentation(self.faceView.image,0.5);
     [manager POST:@"http://emo.vistawearables.com/bookmarks" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
@@ -160,13 +161,13 @@ NSString *mainEmotion;
         NSLog(@"Error: %@", error);
         
     }];
-    
+    }
 }
 
 - (void) findHighest {
     
     
-    NSArray *emoString = [NSArray arrayWithObjects:@"happy",@"surprise",@"sad",@"fear",@"neutral",@"disgust",@"angry",nil];
+    
     
     float happyInt = [happy floatValue];
     float surpriseInt = [surprise floatValue];
@@ -340,7 +341,7 @@ NSString *mainEmotion;
     
     
     grayMat.release();
-    originalMat.release();
+    //originalMat.release();
     rgbMat.release();
     
     

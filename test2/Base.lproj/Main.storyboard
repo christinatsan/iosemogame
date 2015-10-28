@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgr" translatesAutoresizingMaskIntoConstraints="NO" id="Ewb-Dd-vl4">
-                                <rect key="frame" x="-121" y="-26" width="677" height="586"/>
+                                <rect key="frame" x="-128" y="-9" width="677" height="586"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gri-RL-JHG">
@@ -109,17 +109,17 @@
                                     <action selector="missilescore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UG4-H5-JGC"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmy-On-EKu">
-                                <rect key="frame" x="54" y="416" width="103" height="107"/>
-                                <animations/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4P-y9-fpe">
-                                <rect key="frame" x="112" y="348" width="97" height="30"/>
+                                <rect key="frame" x="103" y="364" width="97" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.22171630372738449" green="0.80989259680152204" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmy-On-EKu">
+                                <rect key="frame" x="103" y="427" width="103" height="107"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -130,7 +130,7 @@
                         <outlet property="bld2" destination="myr-xh-oQ2" id="U8f-bY-hzy"/>
                         <outlet property="bld3" destination="BdK-b8-VhO" id="NBl-h0-iWx"/>
                         <outlet property="bld4" destination="br2-mX-RIX" id="1wz-s2-uAv"/>
-                        <outlet property="emostring" destination="g4P-y9-fpe" id="DyS-Qe-gjC"/>
+                        <outlet property="emostring" destination="g4P-y9-fpe" id="ugc-ru-X61"/>
                         <outlet property="explodeeffect" destination="mmy-On-EKu" id="N4A-Ph-zEw"/>
                         <outlet property="faceView" destination="X82-KZ-eyU" id="Byk-AO-FUx"/>
                         <outlet property="imageView" destination="Gri-RL-JHG" id="hVM-7E-Sjd"/>

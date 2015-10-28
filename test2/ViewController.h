@@ -24,7 +24,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *baseimage;
 
 @property (weak, nonatomic) IBOutlet UITextField *leveltext;
-@property (weak, nonatomic) IBOutlet UITextField *emostring;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -37,6 +36,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *resultButton;
 
 @property (weak, nonatomic) IBOutlet UIToolbar *onButton;
+@property (weak, nonatomic) IBOutlet UITextField *emostring;
 
 @property (weak, nonatomic) IBOutlet UIToolbar *offButton;
 @property (weak, nonatomic) IBOutlet UIImageView *explodeeffect;
