@@ -25,7 +25,6 @@
 		B6773B351BDFE50200719E79 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B6773B2B1BDFE50200719E79 /* UIProgressView+AFNetworking.m */; };
 		B6773B361BDFE50200719E79 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B6773B2D1BDFE50200719E79 /* UIRefreshControl+AFNetworking.m */; };
 		B6773B371BDFE50200719E79 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B6773B2F1BDFE50200719E79 /* UIWebView+AFNetworking.m */; };
-		B67E6BFB1BDEB8B1006824E8 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E6BFA1BDEB8B1006824E8 /* opencv2.framework */; };
 		B67E6BFD1BDEB8D2006824E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E6BFC1BDEB8D2006824E8 /* SystemConfiguration.framework */; };
 		B67E6BFF1BDEB8FC006824E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E6BFE1BDEB8FC006824E8 /* AVFoundation.framework */; };
 		B67E6C011BDEB92D006824E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E6C001BDEB92D006824E8 /* Security.framework */; };
@@ -38,6 +37,7 @@
 		B67E6C0F1BDEBAA6006824E8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E6C0E1BDEBAA6006824E8 /* CoreVideo.framework */; };
 		B67E6C111BDEBE28006824E8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E6C101BDEBE28006824E8 /* MobileCoreServices.framework */; };
 		B67F45821BB0FFC200DB3B69 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = B67F45811BB0FFC200DB3B69 /* haarcascade_frontalface_alt.xml */; };
+		CF5CCDAD1BE1E6B800687AA1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5CCDAC1BE1E6B800687AA1 /* opencv2.framework */; settings = {ASSET_TAGS = (); }; };
 		CF8ED56D1BA0A69F00783BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED56C1BA0A69F00783BBC /* main.m */; };
 		CF8ED5701BA0A69F00783BBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED56F1BA0A69F00783BBC /* AppDelegate.m */; };
 		CF8ED5731BA0A69F00783BBC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED5721BA0A69F00783BBC /* ViewController.mm */; };
@@ -103,7 +103,6 @@
 		B6773B2D1BDFE50200719E79 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		B6773B2E1BDFE50200719E79 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		B6773B2F1BDFE50200719E79 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		B67E6BFA1BDEB8B1006824E8 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../ios/opencv2.framework; sourceTree = "<group>"; };
 		B67E6BFC1BDEB8D2006824E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B67E6BFE1BDEB8FC006824E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B67E6C001BDEB92D006824E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -117,6 +116,7 @@
 		B67E6C101BDEBE28006824E8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B67F45811BB0FFC200DB3B69 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		B6CE5C6F1BD8458000968A3F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CF5CCDAC1BE1E6B800687AA1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		CF8ED5671BA0A69F00783BBC /* test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8ED56B1BA0A69F00783BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF8ED56C1BA0A69F00783BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -150,12 +150,12 @@
 				B67E6C0B1BDEBA58006824E8 /* Foundation.framework in Frameworks */,
 				B67E6C091BDEBA18006824E8 /* AssetsLibrary.framework in Frameworks */,
 				B67E6C071BDEB9F7006824E8 /* CoreImage.framework in Frameworks */,
+				CF5CCDAD1BE1E6B800687AA1 /* opencv2.framework in Frameworks */,
 				B67E6C051BDEB9C5006824E8 /* ImageIO.framework in Frameworks */,
 				B67E6C031BDEB982006824E8 /* UIKit.framework in Frameworks */,
 				B67E6C011BDEB92D006824E8 /* Security.framework in Frameworks */,
 				B67E6BFF1BDEB8FC006824E8 /* AVFoundation.framework in Frameworks */,
 				B67E6BFD1BDEB8D2006824E8 /* SystemConfiguration.framework in Frameworks */,
-				B67E6BFB1BDEB8B1006824E8 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +223,7 @@
 		CF8ED55E1BA0A69F00783BBC = {
 			isa = PBXGroup;
 			children = (
+				CF5CCDAC1BE1E6B800687AA1 /* opencv2.framework */,
 				B67E6C101BDEBE28006824E8 /* MobileCoreServices.framework */,
 				B67E6C0E1BDEBAA6006824E8 /* CoreVideo.framework */,
 				B67E6C0C1BDEBA93006824E8 /* CoreMedia.framework */,
@@ -234,7 +235,6 @@
 				B67E6C001BDEB92D006824E8 /* Security.framework */,
 				B67E6BFE1BDEB8FC006824E8 /* AVFoundation.framework */,
 				B67E6BFC1BDEB8D2006824E8 /* SystemConfiguration.framework */,
-				B67E6BFA1BDEB8B1006824E8 /* opencv2.framework */,
 				B6CE5C6F1BD8458000968A3F /* PrefixHeader.pch */,
 				CF8ED5691BA0A69F00783BBC /* test2 */,
 				CF8ED5831BA0A6A000783BBC /* test2Tests */,
@@ -352,7 +352,7 @@
 				TargetAttributes = {
 					CF8ED5661BA0A69F00783BBC = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 5HE6S9K6QZ;
+						DevelopmentTeam = HV4A9ED2SV;
 					};
 					CF8ED57F1BA0A6A000783BBC = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -557,14 +557,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = /Users/wei/Documents/IOSapp/ios;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/wei/Documents/IOSapp/ios,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = test2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -573,14 +578,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = /Users/wei/Documents/IOSapp/ios;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/wei/Documents/IOSapp/ios,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = test2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
