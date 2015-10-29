@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A361p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v7b-yn-X2o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v7b-yn-X2o">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,13 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgr" translatesAutoresizingMaskIntoConstraints="NO" id="Ewb-Dd-vl4">
-                                <rect key="frame" x="-178" y="0.0" width="677" height="586"/>
+                                <rect key="frame" x="-128" y="-9" width="677" height="586"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gri-RL-JHG">
                                 <rect key="frame" x="86" y="0.0" width="48" height="48"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDY-WT-9ri">
                                 <rect key="frame" x="7" y="538" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" title="quit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -33,6 +37,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjQ-DD-JCt">
                                 <rect key="frame" x="250" y="538" width="38" height="30"/>
+                                <animations/>
                                 <state key="normal" title="move">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,50 +47,61 @@
                             </button>
                             <imageView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rh" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-fF-bq8">
                                 <rect key="frame" x="7" y="55" width="22" height="22"/>
+                                <animations/>
                             </imageView>
                             <imageView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rh" translatesAutoresizingMaskIntoConstraints="NO" id="myr-xh-oQ2">
                                 <rect key="frame" x="31" y="55" width="22" height="22"/>
+                                <animations/>
                             </imageView>
                             <imageView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rh" translatesAutoresizingMaskIntoConstraints="NO" id="BdK-b8-VhO">
                                 <rect key="frame" x="54" y="55" width="22" height="22"/>
+                                <animations/>
                             </imageView>
                             <imageView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rh" translatesAutoresizingMaskIntoConstraints="NO" id="br2-mX-RIX">
                                 <rect key="frame" x="79" y="55" width="22" height="22"/>
+                                <animations/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sry-jM-2fb" customClass="timebar">
                                 <rect key="frame" x="0.0" y="45" width="125" height="2"/>
+                                <animations/>
                                 <color key="tintColor" red="0.41914354630095191" green="0.89452743530273438" blue="0.1655550823718199" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Level:  1" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECj-QW-HUU">
                                 <rect key="frame" x="207" y="17" width="97" height="30"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.12193760597123737" green="0.57819834699855277" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Score: 0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MX-av-S2e">
                                 <rect key="frame" x="207" y="55" width="97" height="30"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.086171462868602444" green="0.5688117855659085" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0s-s0-jD2">
                                 <rect key="frame" x="35" y="21" width="38" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-missile" translatesAutoresizingMaskIntoConstraints="NO" id="PRF-4a-zJ8">
                                 <rect key="frame" x="267" y="519" width="15" height="46"/>
+                                <animations/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="usercam" translatesAutoresizingMaskIntoConstraints="NO" id="X82-KZ-eyU">
                                 <rect key="frame" x="133" y="0.0" width="67" height="91"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8f-pB-4Ee">
                                 <rect key="frame" x="250" y="518" width="54" height="30"/>
+                                <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -93,10 +109,19 @@
                                     <action selector="missilescore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UG4-H5-JGC"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4P-y9-fpe">
+                                <rect key="frame" x="103" y="364" width="97" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.22171630372738449" green="0.80989259680152204" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmy-On-EKu">
-                                <rect key="frame" x="54" y="416" width="103" height="107"/>
+                                <rect key="frame" x="103" y="427" width="103" height="107"/>
+                                <animations/>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
@@ -105,6 +130,7 @@
                         <outlet property="bld2" destination="myr-xh-oQ2" id="U8f-bY-hzy"/>
                         <outlet property="bld3" destination="BdK-b8-VhO" id="NBl-h0-iWx"/>
                         <outlet property="bld4" destination="br2-mX-RIX" id="1wz-s2-uAv"/>
+                        <outlet property="emostring" destination="g4P-y9-fpe" id="ugc-ru-X61"/>
                         <outlet property="explodeeffect" destination="mmy-On-EKu" id="N4A-Ph-zEw"/>
                         <outlet property="faceView" destination="X82-KZ-eyU" id="Byk-AO-FUx"/>
                         <outlet property="imageView" destination="Gri-RL-JHG" id="hVM-7E-Sjd"/>
@@ -131,6 +157,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1p-TG-kGv">
                                 <rect key="frame" x="128" y="149" width="70" height="30"/>
+                                <animations/>
                                 <state key="normal" title="quick play">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -140,17 +167,20 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uj4-0y-FxI">
                                 <rect key="frame" x="128" y="216" width="84" height="30"/>
+                                <animations/>
                                 <state key="normal" title="custom play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WO-rt-VcF">
                                 <rect key="frame" x="140" y="295" width="40" height="30"/>
+                                <animations/>
                                 <state key="normal" title="about">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -164,10 +194,5 @@
         <image name="red-missile" width="151" height="462"/>
         <image name="rh" width="3167" height="2912"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
     <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
 </document>

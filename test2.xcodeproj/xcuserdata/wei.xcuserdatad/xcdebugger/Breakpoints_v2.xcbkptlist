@@ -150,55 +150,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test2/ViewController.h"
-            timestampString = "466641562.781424"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "highEmotion"
-            landmarkType = "19">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController highEmotion]"
-                  moduleName = "test2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wei/Documents/IOSapp/EmoComputing_ios/test2/ViewController.h"
-                  timestampString = "465331268.610343"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController setHighEmotion:]"
-                  moduleName = "test2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wei/Documents/IOSapp/EmoComputing_ios/test2/ViewController.h"
-                  timestampString = "465331268.610535"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test2/ViewController.h"
@@ -211,33 +163,129 @@
             landmarkType = "19">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController faceView]"
+                  symbolName = "-[ViewController bld1]"
                   moduleName = "test2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wei/Documents/IOSapp/EmoComputing_ios/test2/ViewController.h"
-                  timestampString = "465331278.242674"
+                  timestampString = "467754121.011387"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController setBld1:]"
+                  moduleName = "test2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wei/Documents/IOSapp/EmoComputing_ios/test2/ViewController.h"
+                  timestampString = "467754121.012015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test2/ViewController.h"
+            timestampString = "467754067.99859"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "scoretext"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController imageView]"
+                  moduleName = "test2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wei/Documents/IOSapp/EmoComputing_ios/test2/ViewController.h"
+                  timestampString = "467753541.835116"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
                   offsetFromSymbolStart = "20">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController setFaceView:]"
+                  symbolName = "-[ViewController setImageView:]"
                   moduleName = "test2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wei/Documents/IOSapp/EmoComputing_ios/test2/ViewController.h"
-                  timestampString = "465331278.242862"
+                  timestampString = "467753541.835413"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test2/ViewController.h"
+            timestampString = "467754067.99859"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "imageView"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController imageView]"
+                  moduleName = "test2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wei/Documents/IOSapp/EmoComputing_ios/test2/ViewController.h"
+                  timestampString = "467753546.549223"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController setImageView:]"
+                  moduleName = "test2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wei/Documents/IOSapp/EmoComputing_ios/test2/ViewController.h"
+                  timestampString = "467753546.54968"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
                   offsetFromSymbolStart = "32">
                </Location>
             </Locations>
