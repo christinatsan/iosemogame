@@ -146,23 +146,38 @@ NSArray *emoString = [NSArray arrayWithObjects:@"happy",@"surprise",@"sad",@"fea
 
 -(void) postImage {
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    // NSDictionary *parameters = @{@"bookmark[title]" : @"photo.jpg"};
-    if (faceImage!=Nil){
-    NSData *imageData = UIImageJPEGRepresentation(faceImage, 0.5);
-    //NSData *imageData = UIImageJPEGRepresentation(self.faceView.image,0.5);
-    [manager POST:@"http://emo.vistawearables.com/bookmarks" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFileData:imageData name:@"bookmark[photo]" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
-    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Success: %@", responseObject);
-        // [self getResponse];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW,0),^{
         
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [self getResponse];
-        NSLog(@"Error: %@", error);
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        // NSDictionary *parameters = @{@"bookmark[title]" : @"photo.jpg"};
+        if (faceImage!=Nil){
+            NSData *imageData = UIImageJPEGRepresentation(faceImage, 0.5);
+            //NSData *imageData = UIImageJPEGRepresentation(self.faceView.image,0.5);
+            [manager POST:@"http://emo.vistawearables.com/bookmarks" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+                [formData appendPartWithFileData:imageData name:@"bookmark[photo]" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
+            } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                NSLog(@"Success: %@", responseObject);
+                // [self getResponse];
+                
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                
+                [self getResponse];
+                NSLog(@"Error: %@", error);
+                
+            }];
+        }
         
-    }];
-    }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            NSLog(@"get here");
+            
+        });
+        
+        
+        
+    });
+
 }
 
 - (void) findHighest {
