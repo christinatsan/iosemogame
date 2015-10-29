@@ -38,6 +38,7 @@
 		B67E6C111BDEBE28006824E8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E6C101BDEBE28006824E8 /* MobileCoreServices.framework */; };
 		B67F45821BB0FFC200DB3B69 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = B67F45811BB0FFC200DB3B69 /* haarcascade_frontalface_alt.xml */; };
 		CF5CCDAD1BE1E6B800687AA1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5CCDAC1BE1E6B800687AA1 /* opencv2.framework */; settings = {ASSET_TAGS = (); }; };
+		CF5CCDB51BE260F600687AA1 /* jsonnull.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5CCDB31BE260F600687AA1 /* jsonnull.m */; settings = {ASSET_TAGS = (); }; };
 		CF8ED56D1BA0A69F00783BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED56C1BA0A69F00783BBC /* main.m */; };
 		CF8ED5701BA0A69F00783BBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED56F1BA0A69F00783BBC /* AppDelegate.m */; };
 		CF8ED5731BA0A69F00783BBC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED5721BA0A69F00783BBC /* ViewController.mm */; };
@@ -117,6 +118,8 @@
 		B67F45811BB0FFC200DB3B69 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		B6CE5C6F1BD8458000968A3F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CF5CCDAC1BE1E6B800687AA1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		CF5CCDB31BE260F600687AA1 /* jsonnull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonnull.m; sourceTree = "<group>"; };
+		CF5CCDB41BE260F600687AA1 /* jsonnull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonnull.h; sourceTree = "<group>"; };
 		CF8ED5671BA0A69F00783BBC /* test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8ED56B1BA0A69F00783BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF8ED56C1BA0A69F00783BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -282,6 +285,8 @@
 			children = (
 				CF8ED56B1BA0A69F00783BBC /* Info.plist */,
 				CF8ED56C1BA0A69F00783BBC /* main.m */,
+				CF5CCDB31BE260F600687AA1 /* jsonnull.m */,
+				CF5CCDB41BE260F600687AA1 /* jsonnull.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				B6773B361BDFE50200719E79 /* UIRefreshControl+AFNetworking.m in Sources */,
 				B6773B371BDFE50200719E79 /* UIWebView+AFNetworking.m in Sources */,
 				B6773B161BDFE4F900719E79 /* AFHTTPSessionManager.m in Sources */,
+				CF5CCDB51BE260F600687AA1 /* jsonnull.m in Sources */,
 				B6773B321BDFE50200719E79 /* UIAlertView+AFNetworking.m in Sources */,
 				B6773B1A1BDFE4F900719E79 /* AFURLRequestSerialization.m in Sources */,
 				B6773B301BDFE50200719E79 /* AFNetworkActivityIndicatorManager.m in Sources */,

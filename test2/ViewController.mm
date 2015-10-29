@@ -10,6 +10,7 @@
 #import <opencv2/imgproc/imgproc_c.h>
 #import <opencv2/objdetect/objdetect.hpp>
 #import <dispatch/dispatch.h>
+#import "jsonnull.h"
 
 
 @interface ViewController ()
@@ -502,7 +503,7 @@ NSArray *emoString = [NSArray arrayWithObjects:@"happy",@"surprise",@"sad",@"fea
 - (void)timerHit:(NSTimer*)timer {
     
     [self postImage];
-    [self getResponse];
+   // [self getResponse]; //(christina - im calling it when postImage finishes, check up)
     [self findHighest];
     [self.emostring setText:mainEmotion];
     //[self.emostring setText:(NSString * _Nullable)]
